@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="icon" href="./favicon.ico">
+  <title>Bleedle's Shop</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav__bar">
+      <img src="./images/beedle_logo.png" alt=""/>
+
+      <div class="center__items">
+        <a class="link_a vender" href="#" id="vender__link">Vender</a>
+        <h1 class="shop__name">Beedle's Shop</h1>
+        <a href="#comprar">Comprar</a>
+      </div>
+
+      <div class="hamburguer__icon">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-bars id=burguer_bar"></i>
+
+      </div>
+      <!-- *Hamburguer menu -->
+      <div class="hamburguer__menu ">
+        <a class="a_hover" href="#comprar">Comprar</a>
+        <a class="a_hover" href="./signup.html">Registrarme</a>
+        <a class="a_hover" href="./login.html">Iniciar Seción</a>
+      </div>
+
+      <!-- *Carrito -->
+
+      <div class="cart__container">
+        <div class="cart__items">
+
+        </div>
+
+        <div class="purcharse__info">
+          <div class="rupias__total">
+            <p>Total</p>
+            <img src="./images/Green_Rupee.png" alt="">
+            <h4 class="purcharseTotal">0</h4>
+          </div>
+          <button class="button__confirm">¡Es un trato!</button>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- total carrito -->
+
+  <!--  <div class="products__car">
+      
+      <img src="./images/products/Cold_Darner.png" alt="cold_darner">
+
+      
+      <div class="info__products__car">
+        <div class="first__part__car">
+          <p>Cold Darner</p>
+          <img src="./images/Green_Rupee.png" alt="">
+          <h4>100</h4>
+        </div>
+        <hr>
+       
+        <div class="second__part__car">
+          <div class="add_sus">
+          <span class="sign down">-</span>
+          <spam>10</spam>
+          <span class="sign up">+</sppam>
+        </div>
+       
+          <p>Total</p>
+          <img src="./images/Green_Rupee.png" alt="">
+          <h4>100</h4>
+        </div>
+      </div>
+    </div>
+    -->
+
+
+  <!-- total carrito -->
+
+  <!--* HERO -->
+  <main>
+    <div class="hero__content">
+      <div class="info">
+        <p>Siempre tengo un precio justo o... mi nombre no es Beedle.</p>
+        <button class="btn_hover"> <a href="#comprar">¡Comprar!</a> </button>
+        <button class="btn_hover vender">¡Vender!</button>
+        <button class="btn_hover"> <a href="#about">¿Beedle's Shop?</a> </button>
+      </div>
+      <div class="hero__img">
+        <img src="./images/Beedle_Circles.png" class="beedle_hero" alt="Beedle circles">
+      </div>
+    </div>
+
+  </main>
+  <section>
+    <div class="about__content" id="about">
+      <p>
+        Mi nombre es Beedle y soy comerciante de Hyrule, tengo todo lo que
+        puedas necesitar.
+      </p>
+      <p class="p__content">..o casi todo...</p>
+      <p>
+        ¡Apuesto lo que quieras a que encuentras algo que te guste! ¡Mira sin
+        miedo!.
+      </p>
+    </div>
+    <div class="about__image">
+      <img class="beedle__bike" src="./images/Beedle_Model.png" alt="beedle" />
+    </div>
+  </section>
+  <!-- *Tienda -->
+  <article id="comprar">
+    <h2>¡Lo que tengo disponible!</h2>
+
+    <!-- Filtro -->
+    <div class="filter">
+      <button class="category" data-category="todo">Todo.</button>
+      <button class="category" data-category="comestible">Comestible.</button>
+      <button class="category" data-category="armas">Armas.</button>
+      <button class="category" data-category="ingredientes"> Ingredientes.</button>
+    </div>
+
+
+    <!--* Productos -->
+    <div class="products__container">
+      <!-- Lista de productos -->
+      <div class="product__list">
+        <!-- Artículos -->
+        <!-- <div class="product__item">
+          <div class="product__info">
+            <img src="./images/products/Cold_Darner.png" alt="cold_darner" />
+            <h4>Cold Darner</h4>
+          </div>
+          <div class="product__price">
+            <img class="rupee" src="./images/Green_Rupee.png" alt="Rupee" />
+            <h3>100</h3>
+          </div>
+        </div>
+
+        <div class="product__item">
+          <div class="product__info">
+            <img src="./images/products/Hot-Footed-Frog.png" alt="cold_darner" />
+            <h4>Cold Darner</h4>
+          </div>
+          <div class="product__price">
+            <img class="rupee" src="./images/Green_Rupee.png" alt="Rupee" />
+            <h3>100</h3>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="product__info">
+            <img src="./images/products/Cold_Darner.png" alt="cold_darner" />
+            <h4>Cold Darner</h4>
+          </div>
+          <div class="product__price">
+            <img class="rupee" src="./images/Green_Rupee.png" alt="Rupee" />
+            <h3>100</h3>
+          </div>
+        </div>
+
+        <div class="product__item">
+          <div class="product__info">
+            <img src="./images/products/Cold_Darner.png" alt="cold_darner" />
+            <h4>Cold Darner</h4>
+          </div>
+          <div class="product__price">
+            <img class="rupee" src="./images/Green_Rupee.png" alt="Rupee" />
+            <h3>100</h3>
+            
+          </div> -->
+      </div>
+    
+    </div>
+    <!--* Card del producto seleccionado -->
+
+    <div class="products__card">
+      <!-- Top -->
+      <!-- <div class="first__part"> -->
+      <!--    <button class="close__button">X</button>
+      <img src="./images/products/Cold_Darner.png" alt="cold_darner">
+      <div class="price">
+        <img src="./images/Green_Rupee.png" alt="">
+        <h4>100</h4>
+        <p>Precio</p>
+        <hr>
+      </div>
+    </div> -->
+      <!-- Medium -->
+      <!-- <div class="product__description">
+      <h5>Cold Darner</h5>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsum praesentium ad impedit aliquid
+        inventore, et sint aspernatur autem totam incidunt </p>
+    </div> -->
+      <!-- bottom -->
+      <!--  <div class="product__card__options">
+      <span class="ad_sus">
+        <button class="sign">-</button>
+        <p>10</p>
+        <button class="sign">-</button>
+      </span>
+      <button data-id="${id}" data-name="${name}" data-category="${category}" data-img="${img}" class="add__product" >¡Agrega eso!</button> 
+    </div>
+  </div> -->
+
+
+
+  </article>
+
+  <footer>
+    <p class="footer__message"> ¡Espero volver a verte pronto, viajero! ¡Que tengas muchas aventuras a donde quiera que
+      vayas!</p>
+  </footer>
+  <p class="end">Hecho con <3 por Adriana </p>
+      <!-- Javascrip -->
+      <script src="./data.js"></script>
+      <script src="./index.js"></script>
+     
+    </body>
+
+</html>
